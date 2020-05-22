@@ -45,3 +45,18 @@ function __debug()
 }
 
 endif;
+
+/**
+ * Load carbon fields
+ * Hooked via action after_setup_theme, priority 10
+ * @since   1.0.0
+ * @return  void
+ */
+function t4t_crb_load() {
+    require_once ( 'vendor/autoload.php' );
+    \Carbon_Fields\Carbon_Fields::boot();
+}
+
+add_action( "after_setup_theme", 't4t_crb_load', 10);
+
+require_once ( get_stylesheet_directory() . '/inc/post-meta/home-setting.php' );
