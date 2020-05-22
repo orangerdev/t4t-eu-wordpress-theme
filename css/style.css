@@ -1,0 +1,561 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: 'Gotham';
+  src: url("fonts/Gotham-Bold.woff2") format("woff2"), url("fonts/Gotham-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Gotham';
+  src: url("fonts/Gotham-Black.woff2") format("woff2"), url("fonts/Gotham-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+@font-face {
+  font-family: 'Gotham Book';
+  src: url("fonts/Gotham-Book.woff2") format("woff2"), url("fonts/Gotham-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  font-family: 'Roboto'; }
+
+div {
+  box-sizing: border-box; }
+
+h1, h2 {
+  font-family: "Gotham";
+  font-weight: 900;
+  margin: 0; }
+
+button {
+  border: none;
+  cursor: pointer;
+  outline: none; }
+
+.wrapper {
+  width: 100%; }
+
+.btn-default {
+  padding: 10px 20px;
+  color: #5DA9DD !important;
+  font-size: 12px;
+  font-family: "Gotham";
+  font-weight: bold;
+  border: 1px solid #5DA9DD;
+  background-color: #fff; }
+
+.btn-default:hover {
+  padding: 10px 20px;
+  color: white !important;
+  font-size: 12px;
+  border: 0px solid #5DA9DD;
+  background-color: #5DA9DD;
+  text-decoration: none; }
+
+.btn-default-dark {
+  padding: 10px 20px;
+  color: #233C87;
+  font-size: 12px;
+  font-family: "Gotham";
+  font-weight: bold;
+  border: 1px solid #233C87; }
+
+.btn-default-dark:hover {
+  padding: 10px 20px;
+  color: white;
+  font-size: 12px;
+  border: 0px solid #233C87;
+  background-color: #233C87;
+  text-decoration: none; }
+
+#navigation {
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  background-color: #fff; }
+  #navigation ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0; }
+  #navigation li {
+    display: inline-block;
+    padding: 0 10px;
+    font-size: 10px;
+    border-right: 1px solid #5DA9DD;
+    color: #233C87; }
+    #navigation li a {
+      color: #5DA9DD;
+      text-decoration: none; }
+    #navigation li a:hover {
+      color: #233C87; }
+  #navigation li:last-child {
+    border-right: none; }
+  #navigation .flag {
+    width: 20px;
+    display: inline-block; }
+
+section h2 {
+  font-size: 19px;
+  color: #233C87;
+  margin-bottom: 20px; }
+  section h2 span {
+    color: #5DA9DD; }
+section .desc {
+  font-size: 12px;
+  padding: 30px; }
+
+#section-home {
+  background-color: #233C87;
+  min-height: 100vh; }
+  #section-home .header {
+    padding: 15px 20px;
+    background-color: #233C87; }
+    #section-home .header .icon-socmed {
+      filter: brightness(0) invert(1);
+      width: 20px; }
+  #section-home .flag {
+    width: 30px; }
+  #section-home h1, #section-home h2 {
+    padding: 0;
+    margin: 0;
+    color: white; }
+  #section-home h1 {
+    font-size: 40px;
+    font-family: "Gotham"; }
+  #section-home h2 {
+    font-size: 12px;
+    font-family: "Gotham Book"; }
+  #section-home .book-wrapper {
+    padding-top: 30px;
+    padding-bottom: 50px; }
+  #section-home .book-slideshow {
+    padding: 20px 80px;
+    position: relative;
+    background-image: url("../images/img_pattern_honeycomb.svg");
+    background-position: center 100px;
+    background-repeat: repeat-x; }
+    #section-home .book-slideshow .uk-slideshow-items {
+      -webkit-box-shadow: -12px -12px 30px -14px #011e36;
+      -moz-box-shadow: -12px -12px 30px -14px #011e36;
+      box-shadow: -12px -12px 30px -14px #011e36; }
+    #section-home .book-slideshow .slide-nav {
+      padding-top: 20px;
+      text-align: center;
+      color: white;
+      font-family: "Gotham";
+      font-size: 12px; }
+      #section-home .book-slideshow .slide-nav a {
+        color: white;
+        width: 7px; }
+  #section-home .footer-bottom {
+    background-color: #233C87;
+    color: #fff;
+    text-align: center;
+    font-size: 8px;
+    padding: 20px; }
+
+#section-cover {
+  position: relative; }
+  #section-cover .cover-title {
+    padding: 200px 20px 100px 20px;
+    z-index: 1; }
+  #section-cover h1 {
+    font-size: 40px;
+    margin: 20px 0 10px 0;
+    color: #233C87; }
+  #section-cover .subtitle {
+    font-family: "Gotham Book";
+    font-size: 15px;
+    color: #233C87;
+    margin: 0; }
+  #section-cover #img-batik {
+    position: absolute;
+    z-index: 0;
+    top: 50px; }
+
+#section-cooperation .img-sustain {
+  bottom: -20px;
+  right: 30px; }
+#section-cooperation .content-euworldwide {
+  padding: 0px 0 30px 0; }
+
+#section-euasean {
+  background-image: url("../images/bg_natural_partners_mobile.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  background-position: center; }
+  #section-euasean h2 {
+    margin-bottom: 0; }
+  #section-euasean .subtitle {
+    font-family: "Gotham";
+    color: #5DA9DD;
+    font-size: 12px; }
+  #section-euasean .desc {
+    color: #233C87; }
+
+#section-bilateral {
+  margin: 0px 0;
+  padding: 0px 0;
+  background: #bbe6f9;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #bbe6f9 0%, #f1fafd 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #bbe6f9 0%, #f1fafd 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #bbe6f9 0%, #f1fafd 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbe6f9', endColorstr='#f1fafd',GradientType=0 );
+  /* IE6-9 */ }
+  #section-bilateral .subtitle {
+    font-family: "Gotham";
+    color: #5DA9DD;
+    font-size: 12px; }
+  #section-bilateral .flags {
+    padding: 0 50px; }
+    #section-bilateral .flags img {
+      width: 50px;
+      margin-right: 10px;
+      margin-bottom: 10px; }
+
+footer .footer-nav {
+  background-color: #DFDEDF;
+  padding: 30px;
+  font-size: 10px; }
+  footer .footer-nav .sub-footer {
+    padding: 30px 0;
+    text-align: center; }
+  footer .footer-nav .subtitle {
+    color: #808084;
+    font-family: "Gotham";
+    font-size: 13px;
+    font-weight: bold; }
+  footer .footer-nav .title-connect {
+    font-family: "Gotham";
+    font-weight: 900;
+    font-size: 40px; }
+  footer .footer-nav .title-id {
+    font-family: "Gotham";
+    font-weight: 900;
+    font-size: 15px; }
+  footer .footer-nav .soc-med {
+    width: 200px;
+    margin: 0 auto; }
+  footer .footer-nav .socmed {
+    padding: 20px 0px;
+    margin-top: 0px;
+    border-top: 2px solid #808084;
+    border-bottom: 2px solid #808084; }
+    footer .footer-nav .socmed img {
+      filter: grayscale(100%); }
+  footer .footer-nav a {
+    color: #808084;
+    text-decoration: none; }
+  footer .footer-nav a:hover {
+    color: #233C87; }
+footer .footer-bottom {
+  background-color: #233C87;
+  color: #fff;
+  text-align: center;
+  font-size: 8px;
+  padding: 20px; }
+
+.uk-offcanvas-bar {
+  background-color: #fff;
+  color: #5DA9DD; }
+  .uk-offcanvas-bar .uk-close {
+    color: #233C87; }
+
+#slide-nav .slide-menu {
+  padding: 40px 0; }
+  #slide-nav .slide-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+  #slide-nav .slide-menu li {
+    border-bottom: 1px solid #DBF5FD;
+    font-size: 12px;
+    font-family: "Gotham Book";
+    padding: 15px 30px; }
+    #slide-nav .slide-menu li a {
+      color: #5DA9DD;
+      text-decoration: none; }
+    #slide-nav .slide-menu li a:hover {
+      color: #233C87;
+      text-decoration: none; }
+  #slide-nav .slide-menu .socmed {
+    font-family: "Gotham Book";
+    color: #233C87;
+    font-size: 12px;
+    padding-top: 20px; }
+
+.for-desktop {
+  display: none !important; }
+
+.for-mobile {
+  display: initial !important; }
+
+@media screen and (min-width: 600px) {
+  .mobile-break {
+    display: none; } }
+/*
+  ____            _    _
+ |  _ \  ___  ___| | _| |_ ___  _ __
+ | | | |/ _ \/ __| |/ / __/ _ \| '_ \
+ | |_| |  __/\__ \   <| || (_) | |_) |
+ |____/ \___||___/_|\_\__\___/| .__/
+                               |_|
+*/
+@media (min-width: 768px) {
+  .for-desktop {
+    display: block !important; }
+
+  .for-mobile {
+    display: none !important; } }
+@media screen and (min-width: 768px) {
+  .section-wrapper {
+    width: 1024px;
+    margin: 0 auto; }
+
+  #navigation {
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    background-color: #fff; }
+    #navigation ul {
+      list-style: none;
+      display: inline-block;
+      margin: 0;
+      padding: 0; }
+    #navigation li {
+      display: inline-block;
+      padding: 0 10px;
+      font-size: 10px;
+      border-right: 1px solid #5DA9DD;
+      color: #233C87; }
+      #navigation li a {
+        color: #5DA9DD;
+        text-decoration: none; }
+      #navigation li a:hover {
+        color: #233C87; }
+    #navigation li:last-child {
+      border-right: none; }
+    #navigation .flag {
+      width: 20px;
+      display: inline-block; }
+
+  section h2 {
+    font-size: 19px;
+    color: #233C87;
+    margin-bottom: 20px; }
+    section h2 span {
+      color: #5DA9DD; }
+  section .desc {
+    font-size: 12px;
+    text-align: left;
+    padding: 0; }
+  section .desc-left {
+    padding-right: 60px; }
+  section .desc-right {
+    padding-left: 60px; }
+
+  #section-home {
+    background-color: #233C87;
+    min-height: 100vh;
+    background-image: url("../images/img_map_selection.svg");
+    background-position: center 80px;
+    background-repeat: no-repeat; }
+    #section-home .header {
+      padding: 15px 20px;
+      background-color: #233C87; }
+      #section-home .header .icon-socmed {
+        filter: brightness(0) invert(1);
+        width: 20px; }
+    #section-home .flag {
+      width: 30px; }
+    #section-home h1, #section-home h2 {
+      padding: 0;
+      margin: 0;
+      color: white; }
+    #section-home h1 {
+      font-size: 40px;
+      font-family: "Gotham"; }
+    #section-home h2 {
+      font-size: 12px;
+      font-family: "Gotham Book"; }
+    #section-home .book-wrapper {
+      position: relative;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      width: 1024px;
+      margin: 0 auto;
+      text-align: center;
+      background-image: url("../images/img_pattern_honeycomb.svg");
+      background-position: center 130px;
+      background-repeat: repeat-x; }
+    #section-home .book-slideshow {
+      width: 40%;
+      display: inline-block;
+      padding: 20px 80px;
+      position: relative;
+      background-image: none; }
+      #section-home .book-slideshow .uk-slideshow-items {
+        -webkit-box-shadow: -12px -12px 30px -14px #011e36;
+        -moz-box-shadow: -12px -12px 30px -14px #011e36;
+        box-shadow: -12px -12px 30px -14px #011e36; }
+      #section-home .book-slideshow .slide-nav {
+        padding-top: 20px;
+        text-align: center;
+        color: white;
+        font-family: "Gotham";
+        font-size: 12px; }
+        #section-home .book-slideshow .slide-nav a {
+          color: white;
+          width: 7px; }
+    #section-home .footer-bottom {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      background-color: #233C87;
+      color: #fff;
+      text-align: center;
+      font-size: 8px;
+      padding: 20px; }
+
+  #section-cover {
+    position: relative; }
+    #section-cover .cover-title {
+      padding: 600px 20px 100px 20px;
+      z-index: 1; }
+    #section-cover h1 {
+      font-size: 40px;
+      margin: 20px 0 10px 0;
+      color: #233C87; }
+    #section-cover .subtitle {
+      font-family: "Gotham Book";
+      font-size: 15px;
+      color: #233C87;
+      margin: 0; }
+    #section-cover #img-batik {
+      position: absolute;
+      z-index: 0; }
+
+  #section-cooperation {
+    text-align: center; }
+    #section-cooperation .img-sustain {
+      bottom: -20px;
+      right: -20px; }
+    #section-cooperation .content-euworldwide {
+      padding: 100px 0; }
+
+  #section-euasean {
+    background-image: url("../images/bg_natural_partners.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    background-position: center; }
+    #section-euasean h2 {
+      margin-bottom: 0; }
+    #section-euasean .subtitle {
+      font-family: "Gotham";
+      color: #5DA9DD;
+      font-size: 12px; }
+    #section-euasean .desc {
+      color: #233C87;
+      width: 450px;
+      margin: 0 auto;
+      text-align: center; }
+
+  #section-bilateral {
+    margin: 50px 0;
+    padding: 50px 0;
+    background: #bbe6f9;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #bbe6f9 0%, #f1fafd 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #bbe6f9 0%, #f1fafd 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #bbe6f9 0%, #f1fafd 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bbe6f9', endColorstr='#f1fafd',GradientType=0 );
+    /* IE6-9 */ }
+    #section-bilateral .subtitle {
+      font-family: "Gotham";
+      color: #5DA9DD;
+      font-size: 12px; }
+    #section-bilateral .flags {
+      padding: 0 50px; }
+      #section-bilateral .flags img {
+        width: 70px;
+        margin-right: 10px;
+        margin-bottom: 10px; }
+
+  footer .footer-nav {
+    background-color: #DFDEDF;
+    padding: 50px 0;
+    font-size: 10px; }
+    footer .footer-nav .sub-footer {
+      padding: 0px;
+      text-align: left; }
+    footer .footer-nav .subtitle {
+      color: #808084;
+      font-family: "Gotham";
+      font-size: 13px;
+      font-weight: bold; }
+    footer .footer-nav .title-connect {
+      font-family: "Gotham";
+      font-weight: 900;
+      font-size: 40px; }
+    footer .footer-nav .title-id {
+      font-family: "Gotham";
+      font-weight: 900;
+      font-size: 15px; }
+    footer .footer-nav .soc-med {
+      width: 200px;
+      margin: 0; }
+    footer .footer-nav .socmed {
+      padding: 20px 0px;
+      margin-top: 0px;
+      border-top: 2px solid #808084;
+      border-bottom: 2px solid #808084; }
+      footer .footer-nav .socmed img {
+        filter: grayscale(100%); }
+    footer .footer-nav a {
+      color: #808084;
+      text-decoration: none; }
+    footer .footer-nav a:hover {
+      color: #233C87; }
+  footer .footer-bottom {
+    background-color: #233C87;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    padding: 20px; }
+
+  .uk-offcanvas-bar {
+    background-color: #fff;
+    color: #5DA9DD; }
+
+  #slide-nav .slide-menu {
+    padding: 40px 0; }
+    #slide-nav .slide-menu ul {
+      list-style: none;
+      padding: 0;
+      margin: 0; }
+    #slide-nav .slide-menu li {
+      border-bottom: 1px solid #DBF5FD;
+      font-size: 12px;
+      font-family: "Gotham Book";
+      padding: 15px 30px; }
+      #slide-nav .slide-menu li a {
+        color: #5DA9DD;
+        text-decoration: none; }
+      #slide-nav .slide-menu li a:hover {
+        color: #233C87;
+        text-decoration: none; }
+    #slide-nav .slide-menu .socmed {
+      font-family: "Gotham Book";
+      color: #233C87;
+      font-size: 12px;
+      padding-top: 20px; } }
