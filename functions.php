@@ -23,6 +23,38 @@ function t4t_register_styles() {
 
 add_action( 'wp_enqueue_scripts', 't4t_register_styles', 100 );
 
+/**
+ * Register widget areas.
+ * Hooked via action t4teu_sidebar_registration, priority 10
+ * @since 	1.0.0
+ * @return 	void
+ */
+function t4teu_sidebar_registration() {
+
+	// Arguments used in all register_sidebar() calls.
+	$shared_args = array(
+		'before_title'  => '<span class="subtitle">',
+		'after_title'   => '</span><br /><br />',
+		'before_widget' => '<div class="sub-footer">',
+		'after_widget'  => '</div>',
+	);
+
+	// Footer #1.
+	register_sidebar(
+		array_merge(
+			$shared_args,
+			array(
+				'name'        => __( 'Main Footer #1', 't4teu' ),
+				'id'          => 'footer-sidebar-t4t',
+				'description' => __( 'Widgets in this area will be displayed in t4t theme.', 't4teu' ),
+			)
+		)
+	);
+
+}
+
+add_action( 'widgets_init', 't4teu_sidebar_registration', 10);
+
 if(!function_exists('__debug')) :
 
 /**
@@ -59,4 +91,5 @@ function t4t_crb_load() {
 
 add_action( "after_setup_theme", 't4t_crb_load', 10);
 
+require_once ( get_stylesheet_directory() . '/inc/theme-options.php' );
 require_once ( get_stylesheet_directory() . '/inc/post-meta/home-setting.php' );

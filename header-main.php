@@ -52,10 +52,14 @@
                 );
                 ?>
                 <div class="uk-margin uk-text-center">
-                    <a href="#"><button class="btn-default">DOWNLOAD E-DOCUMENT<br>VERSION</button></a>
+                    <a href="<?php echo wp_get_attachment_url(carbon_get_theme_option('edocument_file')); ?>" target="_blank" rel="nofollow">
+                        <button type="button" class='btn-default'>
+                            <?php echo carbon_get_theme_option('edocument_title'); ?>
+                        </button>
+                    </a>
                 </div>
                 <div class="socmed uk-text-center">
-                    Get Connected &nbsp;&nbsp;<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon_fb.svg">&nbsp;<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon_twitter.svg">&nbsp;<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon_ig.svg">
+                    <?php echo carbon_get_theme_option('sidebar_get_connected_content'); ?>
                 </div>
             </div>
         </div>
