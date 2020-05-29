@@ -91,5 +91,8 @@ function t4t_crb_load() {
 
 add_action( "after_setup_theme", 't4t_crb_load', 10);
 
+require_once ( get_stylesheet_directory() . '/inc/theme-uikit-offcanvas-menu.php' );
+require_once ( get_stylesheet_directory() . '/inc/theme-uikit-primary-menu.php' );
+require_once ( get_stylesheet_directory() . '/inc/theme-uikit-top-menu.php' );
 require_once ( get_stylesheet_directory() . '/inc/theme-options.php' );
 require_once ( get_stylesheet_directory() . '/inc/post-meta/home-setting.php' );

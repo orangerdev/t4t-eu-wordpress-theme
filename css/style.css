@@ -560,3 +560,74 @@ footer .footer-bottom {
       color: #233C87;
       font-size: 12px;
       padding-top: 20px; } }
+
+.nav-primary-menu { display: inline-block; }
+
+.menu.header-menu li {
+    display: block;
+    transition-duration: 0.5s;
+    position: relative;
+}
+
+.menu.primary-menu li.current-menu-item > a {
+    color: #253C87!important;
+}
+
+.menu.header-menu li:hover {
+    cursor: pointer;
+}
+
+.menu.header-menu li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  top: 34px;
+  left: 0;
+  display: block;
+  background: white;
+  min-width: 180px;
+}
+
+.menu.expanded-menu li ul {
+    position: relative;
+    left: auto;
+    top: auto;
+    display: none;
+}
+
+.menu.header-menu li:hover > ul,
+.menu.header-menu li:focus-within > ul,
+.menu.header-menu li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.menu.primary-menu li ul li {
+  clear: both;
+  width: 100%;
+  display: block;
+  border-right:0!important;
+  padding-top: 10px!important;
+  padding-bottom: 10px!important;
+}
+
+.menu.expanded-menu li ul {
+    padding-top: 15px!important;
+    margin-left: -30px!important;
+    margin-right: -30px!important;
+}
+
+.menu.expanded-menu li ul li {
+    border-bottom: 0!important;
+    border-top:1px solid #DBF5FD;
+}
+
+.menu.expanded-menu li ul li:last-child {
+    border-bottom: 0!important;
+    border-top: 1px solid #DBF5FD;
+    padding-bottom: 0!important;
+    padding-left: 45px!important;
+}

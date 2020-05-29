@@ -12,15 +12,23 @@
             <div class="uk-child-width-expand@s" uk-grid>
                 <div class="uk-width-expand@m">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon_flag_ue.svg" class="flag">&nbsp;&nbsp;<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon_flag_asean.svg" class="flag">
+                    <nav class='nav-primary-menu' role="navigation">
                     <?php
                     wp_nav_menu(
                         array(
-                            'container'  => false,
+                            'container'      => 'ul',
                             'theme_location' => 'primary',
+                            'menu'           => 'primary',
+                            'depth'          => 2,
+                            'container'      => false,
+                            'items_wrap'     => '<ul id="%1$s" class="%2$s primary-menu header-menu">%3$s</ul>',
+	                        // 'menu_class'     => 'uk-nav uk-nav-default uk-navbar-nav',
+                            // 'walker'         => new t4teu_primary_menu()
                         )
                     );
                     ?>
-                </div>
+                    </nav>
+                </div><!-- uk-width-expand@m -->
                 <div class="uk-text-right uk-width-1-4@m uk-margin-remove">
                     <form class="" action="" method="get" style='display:inline-block;'>
                         <input class="uk-input" type="text" name='s' style="display: inline-block; width: 100px; height: 20px;">
@@ -43,14 +51,22 @@
         <div class="uk-offcanvas-bar">
             <button class="uk-offcanvas-close" type="button" uk-close></button>
             <div class="slide-menu">
+                <nav class='nav-expanded-menu' role="navigation">
                 <?php
                 wp_nav_menu(
                     array(
-                        'container'  => false,
-                        'theme_location' => 'primary',
+                        'container'      => 'ul',
+                        'theme_location' => 'expanded',
+                        'menu'           => 'expanded',
+                        'depth'          => 2,
+                        'container'      => false,
+                        'items_wrap'     => '<ul id="%1$s" class="%2$s expanded-menu header-menu">%3$s</ul>',
+                        // 'menu_class'     => 'uk-nav uk-nav-default uk-navbar-nav',
+                        // 'walker'         => new t4teu_primary_menu()
                     )
                 );
                 ?>
+                </nav>
                 <div class="uk-margin uk-text-center">
                     <a href="<?php echo wp_get_attachment_url(carbon_get_theme_option('edocument_file')); ?>" target="_blank" rel="nofollow">
                         <button type="button" class='btn-default'>
