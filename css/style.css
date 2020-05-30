@@ -583,11 +583,16 @@ footer .footer-bottom {
   position: absolute;
   transition: all 0.5s ease;
   margin-top: 1rem;
-  top: 34px;
+  top: 28px;
   left: 0;
   display: block;
   background: white;
   min-width: 180px;
+}
+
+.menu.header-menu > li > ul ul {
+    top: 0px;
+    left: calc(100% - 20px);
 }
 
 .menu.expanded-menu li ul {
@@ -623,11 +628,21 @@ footer .footer-bottom {
 .menu.expanded-menu li ul li {
     border-bottom: 0!important;
     border-top:1px solid #DBF5FD;
+    padding-left: 45px!important;
 }
 
 .menu.expanded-menu li ul li:last-child {
     border-bottom: 0!important;
     border-top: 1px solid #DBF5FD;
     padding-bottom: 0!important;
+}
+
+
+.menu.expanded-menu > li > ul ul {
+    top: auto;
+    left: auto;
+}
+
+.menu.expanded-menu > li > ul ul li {
     padding-left: 45px!important;
 }

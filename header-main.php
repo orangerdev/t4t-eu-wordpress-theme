@@ -19,7 +19,7 @@
                             'container'      => 'ul',
                             'theme_location' => 'primary',
                             'menu'           => 'primary',
-                            'depth'          => 2,
+                            'depth'          => 3,
                             'container'      => false,
                             'items_wrap'     => '<ul id="%1$s" class="%2$s primary-menu header-menu">%3$s</ul>',
 	                        // 'menu_class'     => 'uk-nav uk-nav-default uk-navbar-nav',
@@ -42,7 +42,7 @@
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon_flag_ue.svg" class="flag">&nbsp;&nbsp;
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon_flag_asean.svg" class="flag">
             </div>
-            <div style="width: 50%; display: inline-block; text-align: right;">
+            <div style="width: 47%; display: inline-block; text-align: right;">
                 <a uk-toggle="target: #slide-nav"><span uk-icon="menu"></span>
             </div>
         </div>
@@ -58,7 +58,7 @@
                         'container'      => 'ul',
                         'theme_location' => 'expanded',
                         'menu'           => 'expanded',
-                        'depth'          => 2,
+                        'depth'          => 3,
                         'container'      => false,
                         'items_wrap'     => '<ul id="%1$s" class="%2$s expanded-menu header-menu">%3$s</ul>',
                         // 'menu_class'     => 'uk-nav uk-nav-default uk-navbar-nav',
