@@ -10,7 +10,7 @@ function t4t_register_styles() {
 
     $styles = wp_styles();
 
-    if(!is_page_template('page-home.php')) :
+    if(!is_page_template(array('page-home.php', 'page-index.php')) ) :
 
         wp_enqueue_style    ( 'parent-style', get_template_directory_uri() . '/style.css' );
 
@@ -83,6 +83,31 @@ function __debug()
 
 endif;
 
+if(!function_exists('__print_debug')) :
+
+/**
+ * Debugging functions
+ * @since   1.0.0
+ * @return  void
+ */
+
+function __print_debug()
+{
+    $bt     = debug_backtrace();
+    $caller = array_shift($bt);
+    $args   = [
+        "file"  => $caller["file"],
+        "line"  => $caller["line"],
+        "args"  => func_get_args()
+    ];
+
+    ?><pre><?php
+    print_r(func_get_args());
+    ?></pre><?php
+}
+
+endif;
+
 /**
  * Load carbon fields
  * Hooked via action after_setup_theme, priority 10
@@ -101,3 +126,4 @@ require_once ( get_stylesheet_directory() . '/inc/theme-uikit-primary-menu.php' 
 require_once ( get_stylesheet_directory() . '/inc/theme-uikit-top-menu.php' );
 require_once ( get_stylesheet_directory() . '/inc/theme-options.php' );
 require_once ( get_stylesheet_directory() . '/inc/post-meta/home-setting.php' );
+require_once ( get_stylesheet_directory() . '/inc/post-meta/index-setting.php' );

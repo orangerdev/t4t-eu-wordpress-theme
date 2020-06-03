@@ -20,6 +20,14 @@ function t4t_crb_theme_setting() {
 
             Field::make('separator',    'sp_sidebar_get_connected',         __('Get Connected', 't4teu')),
             Field::make('rich_text',    'sidebar_get_connected_content',    __('Content', 't4teu'))
+        ))
+        ->add_tab( __('Social Media', 't4teu'), array(
+            Field::make('text',     'sc_facebook',  __('Facebook', 't4teu')),
+            Field::make('text',     'sc_twitter',   __('Twitter', 't4teu')),
+            Field::make('text',     'sc_instagram', __('Instagram', 't4teu'))
+        ))
+        ->add_tab( __('Other', 't4teu'), array(
+            Field::make('textarea',     'footer_copyright',  __('Copyright', 't4teu')),
         ));
 
 }
