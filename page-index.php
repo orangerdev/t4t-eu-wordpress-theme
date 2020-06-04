@@ -39,7 +39,7 @@ get_header('index'); ?>
                     foreach($left_gallery as $slide) :
                     ?>
                     <li>
-                        <a href="<?php echo esc_url($slide['url']); ?>">
+                        <a href="<?php echo esc_url($slide['link']); ?>">
                             <img src="<?php echo wp_get_attachment_url($slide['img'], 'medium'); ?>" alt="" style="width:100%;height:auto" />
                         </a>
                     </li>
@@ -59,7 +59,7 @@ get_header('index'); ?>
                     foreach($right_gallery as $slide) :
                     ?>
                     <li>
-                        <a href="<?php echo esc_url($slide['url']); ?>">
+                        <a href="<?php echo esc_url($slide['link']); ?>">
                             <img src="<?php echo wp_get_attachment_url($slide['img'], 'medium'); ?>" alt="" style="width:100%;height:auto" />
                         </a>
                     </li>

@@ -10,7 +10,7 @@ get_header('main');
         <div class="uk-text-center cover-title">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon_flag_ue.svg">&nbsp;&nbsp;<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon_flag_asean.svg">
             <h1>
-                Blue Book 2020
+                <?php the_title(); ?>
             </h1>
             <div class="subtitle">EU-ASEAN Natural Partners</div>
         </div>
