@@ -32,7 +32,7 @@ get_header('index'); ?>
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_fade_right.svg" class="uk-position-right">
         </div>
         <div class="book-slideshow">
-            <div uk-slideshow="ratio: 4:4">
+            <div uk-slideshow="ratio: 4:4" class="uk-position-relative uk-visible-toggle">
                 <ul class="uk-slideshow-items">
                     <?php
                     $left_gallery = carbon_get_post_meta(get_the_ID(), 'index_section_1_image');
@@ -41,18 +41,26 @@ get_header('index'); ?>
                     <li>
                         <a href="<?php echo esc_url($slide['link']); ?>">
                             <img src="<?php echo wp_get_attachment_url($slide['img'], 'medium'); ?>" alt="" style="width:100%;height:auto" />
+                            <span class="uk-position-bottom" style='background-color: rgba(0,0,0, 0.5);color:white;'>
+                                <span class="uk-transition-slide-bottom">
+                                    <span style='font-size:18px;font-weight:bold;'>
+                                        <?php echo carbon_get_post_meta(get_the_ID(), 'index_section_1_title'); ?>
+                                    </span><br />
+                                    <span><?php echo $slide['text']; ?></span>
+                                </span>
+                            </span>
                         </a>
                     </li>
                     <?php endforeach; ?>
                 </ul>
-                <div class="slide-nav">
-                    <a href="#" uk-slidenav-previous uk-slideshow-item="previous"></a> <?php echo carbon_get_post_meta(get_the_ID(), 'index_section_1_title'); ?>
-                    <a href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                <div class="uk-light">
+                    <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
                 </div>
             </div>
-        </div
-        ><div class="book-slideshow">
-            <div uk-slideshow="ratio: 4:4">
+        </div>
+        <div class="book-slideshow">
+            <div uk-slideshow="ratio: 4:4" class="uk-position-relative uk-visible-toggle">
                 <ul class="uk-slideshow-items">
                     <?php
                     $right_gallery = carbon_get_post_meta(get_the_ID(), 'index_section_2_image');
@@ -61,13 +69,23 @@ get_header('index'); ?>
                     <li>
                         <a href="<?php echo esc_url($slide['link']); ?>">
                             <img src="<?php echo wp_get_attachment_url($slide['img'], 'medium'); ?>" alt="" style="width:100%;height:auto" />
+                            <span class="uk-position-bottom" style='background-color: rgba(0,0,0, 0.5);color:white;'>
+                                <span class="uk-transition-slide-bottom">
+                                    <span style='font-size:18px;font-weight:bold;'>
+                                        <?php echo carbon_get_post_meta(get_the_ID(), 'index_section_2_title'); ?>
+                                    </span><br />
+                                    <span>
+                                    <?php echo $slide['text']; ?>
+                                    </span>
+                                </span>
+                            </span>
                         </a>
                     </li>
                     <?php endforeach; ?>
                 </ul>
-                <div class="slide-nav">
-                    <a href="#" uk-slidenav-previous uk-slideshow-item="previous"></a> <?php echo carbon_get_post_meta(get_the_ID(), 'index_section_2_title'); ?>
-                    <a href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                <div class="uk-light">
+                    <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
                 </div>
             </div>
         </div>

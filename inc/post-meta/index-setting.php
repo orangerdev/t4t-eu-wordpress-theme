@@ -21,7 +21,9 @@ function t4t_crb_index_post_meta_setting() {
                 ->add_fields(array(
                     Field::make('text',     'link', __('Link', 't4teu'))
                         ->set_default_value('#'),
-                    Field::make('image',    'img', __('Image', 't4teu'))
+
+                    Field::make('image',    'img',  __('Image', 't4teu')),
+                    Field::make('text',     'text', __('Overlay Title', 't4teu'))
                 ))
                 ->set_layout('tabbed-vertical'),
 
@@ -31,7 +33,9 @@ function t4t_crb_index_post_meta_setting() {
                 ->add_fields(array(
                     Field::make('text',     'link', __('Link', 't4teu'))
                         ->set_default_value('#'),
-                    Field::make('image',    'img', __('Image', 't4teu'))
+
+                    Field::make('image',    'img',  __('Image', 't4teu')),
+                    Field::make('text',     'text', __('Overlay Title', 't4teu'))
                 ))
                 ->set_layout('tabbed-vertical'),
         ));
