@@ -120,5 +120,12 @@
         width: 720px;
         margin-left: auto;
         margin-right: auto;
+
+        .foreword-author{
+            flex-flow: column-reverse;
+            .uk-first-column {
+                margin-top: $size_margin;
+            }
+        }
     }
 }

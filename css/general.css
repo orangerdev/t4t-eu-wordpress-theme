@@ -94,4 +94,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .section-wrapper .foreword-author {
+    flex-flow: column-reverse;
+  }
+  .section-wrapper .foreword-author .uk-first-column {
+    margin-top: 20px;
+  }
 }

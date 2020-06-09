@@ -130,3 +130,4 @@ require_once ( get_stylesheet_directory() . '/inc/theme-options.php' );
 require_once ( get_stylesheet_directory() . '/inc/theme-tags.php' );
 require_once ( get_stylesheet_directory() . '/inc/post-meta/home-setting.php' );
 require_once ( get_stylesheet_directory() . '/inc/post-meta/index-setting.php' );
+require_once ( get_stylesheet_directory() . '/inc/post-meta/foreword-setting.php' );
