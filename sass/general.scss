@@ -1,0 +1,124 @@
+@import 'variables';
+
+.section-wrapper.general-page {
+    &.the-breadcrumbs{
+        padding-top: $top_menu_height;
+    }
+
+    .breadcrumbs {
+        text-transform: uppercase;
+        color : $color_main_blue;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: $size_margin * 2;
+        font-size: 12px;
+        a {
+            color : $color_main_blue;
+            font-weight: 800;
+        }
+    }
+
+    &.foreword-page {
+
+    }
+
+    .foreword-holder {
+        width: 800px;
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+        .foreword-author {
+
+            margin-bottom:$size_margin;
+
+            .author-description {
+
+                display:flex;
+                align-items:flex-end;
+                flex-direction:row;
+
+                .holder {
+
+                    h2 {
+                        font-weight: normal;
+                        color: $color_main_blue;
+                        line-height: 100%;
+                        text-transform: uppercase;
+                    }
+                    h4 {
+                        color: $color_sub_blue;
+                        margin: 0;
+                        line-height: 100%;
+                        font-size: 0.925rem;
+                    }
+                }
+            }
+
+            .author-photo {
+                figure {
+                    img {
+                        -webkit-transform: scaleX(-1);
+                         transform: scaleX(-1);
+                    }
+                }
+            }
+        }
+
+        .foreword-content {
+            strong {
+                color: $color_main_blue;
+            }
+
+            p {
+                text-align: justify;
+                font-size: 12px;
+            }
+            margin-bottom: $size_margin * 2;
+        }
+        .foreword-sign {
+            > * {
+                margin: 0;
+                line-height: 150%;
+            }
+            h5 {
+                font-weight: bold;
+                color: $color_main_blue
+            }
+            h6 {
+                color: $color_sub_blue;
+                font-style: italic;
+                font-weight: normal;
+            }
+            margin-bottom: $size_margin * 2;
+        }
+    }
+}
+
+.foreword-separator {
+    position: relative;
+    height: 130px;
+    margin-bottom: $size_margin * 2;
+
+    &:after {
+        display: block;
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 130px;
+        background-image: url('../images/img_pattern_honeycomb.svg');
+        background-repeat: repeat-x;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .section-wrapper  {
+        max-width: 95%;
+        width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

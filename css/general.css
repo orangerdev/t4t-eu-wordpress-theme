@@ -1,0 +1,97 @@
+.section-wrapper.general-page.the-breadcrumbs {
+  padding-top: 64px;
+}
+.section-wrapper.general-page .breadcrumbs {
+  text-transform: uppercase;
+  color: #233C87;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  font-size: 12px;
+}
+.section-wrapper.general-page .breadcrumbs a {
+  color: #233C87;
+  font-weight: 800;
+}
+.section-wrapper.general-page .foreword-holder {
+  width: 800px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-wrapper.general-page .foreword-holder .foreword-author {
+  margin-bottom: 20px;
+}
+.section-wrapper.general-page .foreword-holder .foreword-author .author-description {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+}
+.section-wrapper.general-page .foreword-holder .foreword-author .author-description .holder h2 {
+  font-weight: normal;
+  color: #233C87;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+.section-wrapper.general-page .foreword-holder .foreword-author .author-description .holder h4 {
+  color: #5DA9DD;
+  margin: 0;
+  line-height: 100%;
+  font-size: 0.925rem;
+}
+.section-wrapper.general-page .foreword-holder .foreword-author .author-photo figure img {
+  transform: scaleX(-1);
+}
+.section-wrapper.general-page .foreword-holder .foreword-content {
+  margin-bottom: 40px;
+}
+.section-wrapper.general-page .foreword-holder .foreword-content strong {
+  color: #233C87;
+}
+.section-wrapper.general-page .foreword-holder .foreword-content p {
+  text-align: justify;
+  font-size: 12px;
+}
+.section-wrapper.general-page .foreword-holder .foreword-sign {
+  margin-bottom: 40px;
+}
+.section-wrapper.general-page .foreword-holder .foreword-sign > * {
+  margin: 0;
+  line-height: 150%;
+}
+.section-wrapper.general-page .foreword-holder .foreword-sign h5 {
+  font-weight: bold;
+  color: #233C87;
+}
+.section-wrapper.general-page .foreword-holder .foreword-sign h6 {
+  color: #5DA9DD;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.foreword-separator {
+  position: relative;
+  height: 130px;
+  margin-bottom: 40px;
+}
+.foreword-separator:after {
+  display: block;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 130px;
+  background-image: url("../images/img_pattern_honeycomb.svg");
+  background-repeat: repeat-x;
+}
+
+@media screen and (max-width: 960px) {
+  .section-wrapper {
+    max-width: 95%;
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

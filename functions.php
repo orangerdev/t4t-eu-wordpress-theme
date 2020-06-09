@@ -10,7 +10,9 @@ function t4t_register_styles() {
 
     $styles = wp_styles();
 
-    if(!is_page_template(array('page-home.php', 'page-index.php')) ) :
+    $page_templates = array('page-home.php', 'page-index.php', 'page-foreword.php');
+
+    if(!is_page_template($page_templates) ) :
 
         wp_enqueue_style    ( 'parent-style', get_template_directory_uri() . '/style.css' );
 
@@ -125,5 +127,6 @@ require_once ( get_stylesheet_directory() . '/inc/theme-uikit-offcanvas-menu.php
 require_once ( get_stylesheet_directory() . '/inc/theme-uikit-primary-menu.php' );
 require_once ( get_stylesheet_directory() . '/inc/theme-uikit-top-menu.php' );
 require_once ( get_stylesheet_directory() . '/inc/theme-options.php' );
+require_once ( get_stylesheet_directory() . '/inc/theme-tags.php' );
 require_once ( get_stylesheet_directory() . '/inc/post-meta/home-setting.php' );
 require_once ( get_stylesheet_directory() . '/inc/post-meta/index-setting.php' );
