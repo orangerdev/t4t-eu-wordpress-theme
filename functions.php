@@ -12,20 +12,21 @@ function t4t_register_styles() {
 
     $page_templates = array('page-home.php', 'page-index.php', 'page-foreword.php');
 
-    if(!is_page_template($page_templates) ) :
+    // if(!is_page_template($page_templates) ) :
+    //
+    //     wp_enqueue_style    ( 'parent-style', get_template_directory_uri() . '/style.css' );
+    //
+    // else :
 
-        wp_enqueue_style    ( 'parent-style', get_template_directory_uri() . '/style.css' );
-
-    else :
-
-        $styles->add_data   ( 'twentytwenty-style', 'after', array() );
+        // $styles->add_data   ( 'twentytwenty-style', 'after', array() );
 
         wp_register_style   ( 'uikit',        get_stylesheet_directory_uri() . '/css/vendor/uikit.min.css', array(), '3.4.2', 'all');
         wp_enqueue_style    ( 't4t-style',    get_stylesheet_directory_uri() . '/css/style.css', array('uikit'), '1.0.0', 'all');
 
         wp_register_script  ( 'uikit',        get_stylesheet_directory_uri() . '/js/uikit.min.js', array('jquery'), '3.4.2', false);
         wp_enqueue_script   ( 'uikit-icons',  get_stylesheet_directory_uri() . '/js/uikit-icons.min.js', array('jquery', 'uikit'), '3.4.2', false);
-    endif;
+
+    // endif;
 }
 
 add_action( 'wp_enqueue_scripts', 't4t_register_styles', 100 );
@@ -128,6 +129,7 @@ require_once ( get_stylesheet_directory() . '/inc/theme-uikit-primary-menu.php' 
 require_once ( get_stylesheet_directory() . '/inc/theme-uikit-top-menu.php' );
 require_once ( get_stylesheet_directory() . '/inc/theme-options.php' );
 require_once ( get_stylesheet_directory() . '/inc/theme-tags.php' );
+require_once ( get_stylesheet_directory() . '/inc/post-meta/page-setting.php' );
 require_once ( get_stylesheet_directory() . '/inc/post-meta/home-setting.php' );
 require_once ( get_stylesheet_directory() . '/inc/post-meta/index-setting.php' );
 require_once ( get_stylesheet_directory() . '/inc/post-meta/foreword-setting.php' );

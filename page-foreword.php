@@ -4,12 +4,9 @@
  */
 global $post;
 get_header('main');
-?>
-<div class="section-wrapper general-page the-breadcrumbs">
-    <?php t4teu_breadcrumbs(); ?>
-</div>
 
-<?php
+get_template_part('template-parts/breadcrumbs');
+
 $forewords = carbon_get_the_post_meta('foreword_content');
 $i = 0;
 foreach($forewords as $foreword) :
