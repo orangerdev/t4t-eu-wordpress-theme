@@ -172,6 +172,15 @@ body.page-foreword .section-wrapper.general-page.the-breadcrumbs {
   text-align: justify;
   font-size: 12px;
 }
+.section-wrapper.general-page .foreword-holder .foreword-content hr {
+  display: block;
+  clear: both;
+  float: none;
+}
+.section-wrapper.general-page .foreword-holder .foreword-content h1, .section-wrapper.general-page .foreword-holder .foreword-content h2, .section-wrapper.general-page .foreword-holder .foreword-content h3, .section-wrapper.general-page .foreword-holder .foreword-content h4, .section-wrapper.general-page .foreword-holder .foreword-content h5, .section-wrapper.general-page .foreword-holder .foreword-content h6 {
+  color: #233C87;
+  font-weight: bold;
+}
 .section-wrapper.general-page .foreword-holder .foreword-sign {
   margin-bottom: 40px;
 }
@@ -222,6 +231,10 @@ body.page-foreword .section-wrapper.general-page.the-breadcrumbs {
   display: block;
   clear: both;
   float: none;
+}
+.section-wrapper.general-page.article-holder .the-content h1, .section-wrapper.general-page.article-holder .the-content h2, .section-wrapper.general-page.article-holder .the-content h3, .section-wrapper.general-page.article-holder .the-content h4, .section-wrapper.general-page.article-holder .the-content h5, .section-wrapper.general-page.article-holder .the-content h6 {
+  color: #233C87;
+  font-weight: bold;
 }
 
 .post-cover-image {

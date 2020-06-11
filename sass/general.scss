@@ -11,6 +11,17 @@
         text-align: justify;
         font-size: $content_size;
     }
+
+    hr {
+        display: block;
+        clear: both;
+        float: none;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $color_main_blue;
+        font-weight: bold;
+    }
 }
 
 body.page-foreword {
@@ -130,11 +141,6 @@ body.page-foreword {
 
         .the-content {
             @include content-style;
-            hr {
-                display: block;
-                clear: both;
-                float: none;
-            }
         }
     }
 }
