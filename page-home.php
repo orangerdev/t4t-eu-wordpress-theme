@@ -3,16 +3,19 @@
  * Template Name: Homepage
  */
 global $post;
+
+$main_title = carbon_get_the_post_meta('page_main_title');
+$sub_title  = carbon_get_the_post_meta('page_sub_title');
+$main_title = (empty($main_title)) ? get_the_title() : $main_title;
+
 get_header('main');
 ?>
     <section id="section-cover">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/img_batik.png" width="100%" id="img-batik">
         <div class="uk-text-center cover-title">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon_flag_ue.svg">&nbsp;&nbsp;<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon_flag_asean.svg">
-            <h1>
-                <?php the_title(); ?>
-            </h1>
-            <div class="subtitle">EU-ASEAN Natural Partners</div>
+            <h1><?php echo $main_title; ?></h1>
+            <div class="subtitle"><?php echo $sub_title; ?></div>
         </div>
     </section>
     <section id="section-cooperation">
