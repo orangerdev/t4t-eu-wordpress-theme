@@ -16,7 +16,10 @@ function t4t_crb_default_page_post_meta_setting() {
         ->add_fields( array(
             Field::make('separator',    'sp_page_detail',   __('Page Title', 't4teu')),
             Field::make('text',         'page_main_title',  __('Main Title', 't4teu')),
-            Field::make('text',         'page_sub_title',   __('Sub Title', 't4teu'))
+            Field::make('text',         'page_sub_title',   __('Sub Title', 't4teu')),
+
+            Field::make('separator',    'sp_featured_image',        __('Featured Image', 't4teu')),
+            Field::make('textarea',     'featured_image_caption',   __('Caption', 't4teu'))
         ));
 
 }
