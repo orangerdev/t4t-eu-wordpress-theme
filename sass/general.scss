@@ -35,6 +35,10 @@ body.page-foreword {
 
     &.the-breadcrumbs{
         margin-bottom: $size_margin * 4;
+        &.no-cover-image {
+            padding-top: $top_menu_height;
+            margin-bottom: 0;
+        }
     }
 
     .breadcrumbs {
@@ -143,6 +147,96 @@ body.page-foreword {
             @include content-style;
         }
     }
+
+    &.contact-content {
+
+        width: 800px;
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: $size_margin;
+
+        .contact-heading {
+            > * {
+                display: inline-block;
+                margin: 0;
+                line-height: 150%;
+                color:$color_main_blue;
+            }
+            h2 {
+                font-size: 1.8rem;
+                padding-right: $size_margin;
+            }
+
+            h4 {
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+
+            margin-bottom: $size_margin;
+        }
+
+        .contact-list {
+            width: 640px;
+            max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .contact-detail {
+                width: 48%;
+                font-size: 11px;
+                display: flex;
+                flex-flow: wrap;
+                justify-content: space-between;
+                margin-bottom: $size_margin;
+
+                figure {
+                    width: 42px;
+                }
+                .detail {
+                    width: calc(100% - 42px - #{$size_margin});
+                    color: $color_body;
+                    font-size: 10px;
+
+                    * {
+                        line-height: 180%;
+                    }
+                    h5 {
+                        font-size: 10px;
+                        color: $color_main_blue;
+                        font-weight: bold;
+                        margin: 0;
+                    }
+
+                    p {
+                        margin: 0;
+                    }
+
+                    span.info {
+                        display: block;
+                        .prefix {
+                            position: relative;
+                            display: inline-block;
+                            width: 6px;
+                            padding-right: 6px;
+                            margin-right: 3px;
+                            &:after {
+                                content:" ";
+                                position: absolute;
+                                top:0;
+                                right : 0;
+                                border-right: 1px solid $color_sub_blue;
+                                height: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 .post-cover-image {
@@ -214,5 +308,12 @@ body.page-foreword {
 @media screen and (max-width:480px) {
     .post-cover-image .caption-holder {
         padding: 0;
+    }
+
+    .section-wrapper.general-page.contact-content .contact-list {
+        justify-content: space-around;
+        .contact-detail {
+            width: 80%;
+        }
     }
 }

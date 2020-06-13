@@ -120,6 +120,10 @@ body.page-foreword .section-wrapper.general-page.the-breadcrumbs {
 .section-wrapper.general-page.the-breadcrumbs {
   margin-bottom: 80px;
 }
+.section-wrapper.general-page.the-breadcrumbs.no-cover-image {
+  padding-top: 64px;
+  margin-bottom: 0;
+}
 .section-wrapper.general-page .breadcrumbs {
   text-transform: uppercase;
   color: #233C87;
@@ -236,6 +240,85 @@ body.page-foreword .section-wrapper.general-page.the-breadcrumbs {
   color: #233C87;
   font-weight: bold;
 }
+.section-wrapper.general-page.contact-content {
+  width: 800px;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.section-wrapper.general-page.contact-content .contact-heading {
+  margin-bottom: 20px;
+}
+.section-wrapper.general-page.contact-content .contact-heading > * {
+  display: inline-block;
+  margin: 0;
+  line-height: 150%;
+  color: #233C87;
+}
+.section-wrapper.general-page.contact-content .contact-heading h2 {
+  font-size: 1.8rem;
+  padding-right: 20px;
+}
+.section-wrapper.general-page.contact-content .contact-heading h4 {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.section-wrapper.general-page.contact-content .contact-list {
+  width: 640px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.section-wrapper.general-page.contact-content .contact-list .contact-detail {
+  width: 48%;
+  font-size: 11px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.section-wrapper.general-page.contact-content .contact-list .contact-detail figure {
+  width: 42px;
+}
+.section-wrapper.general-page.contact-content .contact-list .contact-detail .detail {
+  width: calc(100% - 42px - 20px);
+  color: #605E5E;
+  font-size: 10px;
+}
+.section-wrapper.general-page.contact-content .contact-list .contact-detail .detail * {
+  line-height: 180%;
+}
+.section-wrapper.general-page.contact-content .contact-list .contact-detail .detail h5 {
+  font-size: 10px;
+  color: #233C87;
+  font-weight: bold;
+  margin: 0;
+}
+.section-wrapper.general-page.contact-content .contact-list .contact-detail .detail p {
+  margin: 0;
+}
+.section-wrapper.general-page.contact-content .contact-list .contact-detail .detail span.info {
+  display: block;
+}
+.section-wrapper.general-page.contact-content .contact-list .contact-detail .detail span.info .prefix {
+  position: relative;
+  display: inline-block;
+  width: 6px;
+  padding-right: 6px;
+  margin-right: 3px;
+}
+.section-wrapper.general-page.contact-content .contact-list .contact-detail .detail span.info .prefix:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-right: 1px solid #1D7FC3;
+  height: 18px;
+}
 
 .post-cover-image {
   margin-bottom: 40px;
@@ -296,5 +379,12 @@ body.page-foreword .section-wrapper.general-page.the-breadcrumbs {
 @media screen and (max-width: 480px) {
   .post-cover-image .caption-holder {
     padding: 0;
+  }
+
+  .section-wrapper.general-page.contact-content .contact-list {
+    justify-content: space-around;
+  }
+  .section-wrapper.general-page.contact-content .contact-list .contact-detail {
+    width: 80%;
   }
 }

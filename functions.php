@@ -133,4 +133,5 @@ require_once ( get_stylesheet_directory() . '/inc/shortcodes.php' );
 require_once ( get_stylesheet_directory() . '/inc/post-meta/page-setting.php' );
 require_once ( get_stylesheet_directory() . '/inc/post-meta/home-setting.php' );
 require_once ( get_stylesheet_directory() . '/inc/post-meta/index-setting.php' );
+require_once ( get_stylesheet_directory() . '/inc/post-meta/contact-setting.php' );
 require_once ( get_stylesheet_directory() . '/inc/post-meta/foreword-setting.php' );
