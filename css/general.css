@@ -112,13 +112,17 @@ a img.aligncenter {
   /* Above WP toolbar. */
 }
 
+#navigation {
+  top: 0;
+}
+
 body.page-foreword .section-wrapper.general-page.the-breadcrumbs {
   padding-top: 64px;
   margin-bottom: 0;
 }
 
 .section-wrapper.general-page.the-breadcrumbs {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 .section-wrapper.general-page.the-breadcrumbs.no-cover-image {
   padding-top: 64px;
@@ -240,6 +244,17 @@ body.page-foreword .section-wrapper.general-page.the-breadcrumbs {
   color: #233C87;
   font-weight: bold;
 }
+.section-wrapper.general-page.bilateral .article-heading {
+  max-width: 480px;
+  padding: 15px 0;
+  margin: 0 auto 20px;
+  border-top: 1px solid #5DA9DD;
+  border-bottom: 1px solid #5DA9DD;
+}
+.section-wrapper.general-page.bilateral .article-heading h1 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
 .section-wrapper.general-page.contact-content {
   width: 800px;
   max-width: 95%;
@@ -321,8 +336,12 @@ body.page-foreword .section-wrapper.general-page.the-breadcrumbs {
 }
 
 .post-cover-image {
+  margin-top: 50px;
   margin-bottom: 40px;
   position: relative;
+}
+.post-cover-image figure {
+  margin-bottom: 0;
 }
 .post-cover-image .caption-holder {
   position: absolute;
@@ -343,6 +362,74 @@ body.page-foreword .section-wrapper.general-page.the-breadcrumbs {
   text-align: center;
   font-size: 12px;
   color: white;
+}
+.post-cover-image.bilateral {
+  margin-bottom: 0;
+}
+.post-cover-image.bilateral .caption-holder {
+  top: 0;
+  padding: 0;
+  background: none !important;
+  background-color: transparent !important;
+}
+.post-cover-image.bilateral .caption-holder .caption {
+  width: 640px;
+  padding: 80px 0 60px;
+  margin-left: auto;
+  text-align: left;
+}
+.post-cover-image.bilateral .caption-holder .caption .flags {
+  margin-bottom: 20px;
+}
+.post-cover-image.bilateral .caption-holder .caption .flags span {
+  display: inline-block;
+  width: 48px;
+  margin-right: 10px;
+}
+.post-cover-image.bilateral .caption-holder .caption h3 {
+  margin: 0;
+  color: #233C87;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 100%;
+}
+.post-cover-image.bilateral .caption-holder .caption p {
+  color: #233C87;
+  font-weight: bold;
+  line-height: 135%;
+}
+
+.asean-nation-flags {
+  position: relative;
+  border-bottom: 6px solid #5DA9DD;
+  margin-bottom: 40px;
+}
+.asean-nation-flags .holder {
+  position: absolute;
+  width: 720px;
+  display: flex;
+  background-color: #5DA9DD;
+  padding: 10px 20px 30px;
+  border-radius: 16px;
+  bottom: -20px;
+  left: calc((100% - 720px) / 2);
+  justify-content: space-around;
+}
+.asean-nation-flags .holder .flag {
+  width: 38px;
+}
+.asean-nation-flags .holder .flag img {
+  width: 100%;
+  height: auto;
+}
+.asean-nation-flags .holder .flag.active {
+  position: relative;
+  width: 90px;
+}
+.asean-nation-flags .holder .flag.active img {
+  position: absolute;
+  max-width: none;
+  bottom: 0;
 }
 
 .foreword-separator {
@@ -375,6 +462,28 @@ body.page-foreword .section-wrapper.general-page.the-breadcrumbs {
   .section-wrapper .foreword-author .uk-first-column {
     margin-top: 20px;
   }
+
+  .bilateral.post-cover-image .caption-holder .caption {
+    text-align: center;
+    padding: 48px 0 0;
+  }
+  .bilateral.post-cover-image .caption-holder .caption .flags span {
+    width: 32px;
+    margin: 0 4px;
+  }
+  .bilateral.post-cover-image .caption-holder .caption h3 {
+    font-size: 1.2rem;
+  }
+  .bilateral.post-cover-image .caption-holder .caption p {
+    margin: 0.5rem 0;
+    font-size: 0.7rem;
+  }
+
+  .bilateral.asean-nation-flags .holder {
+    width: 640px;
+    padding: 10px;
+    left: calc((100% - 640px) / 2);
+  }
 }
 @media screen and (max-width: 480px) {
   .post-cover-image .caption-holder {
@@ -386,5 +495,25 @@ body.page-foreword .section-wrapper.general-page.the-breadcrumbs {
   }
   .section-wrapper.general-page.contact-content .contact-list .contact-detail {
     width: 80%;
+  }
+
+  .bilateral.post-cover-image .caption-holder .caption {
+    text-align: center;
+    padding: 24px 0 0;
+  }
+  .bilateral.post-cover-image .caption-holder .caption .flags {
+    margin-bottom: 0.5rem;
+  }
+  .bilateral.post-cover-image .caption-holder .caption h3 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .bilateral.post-cover-image .caption-holder .caption p {
+    margin: 0.3rem 0;
+    font-size: 0.6rem;
+  }
+
+  .bilateral.asean-nation-flags .holder {
+    display: none;
   }
 }

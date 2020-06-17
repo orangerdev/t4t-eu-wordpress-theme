@@ -24,6 +24,10 @@
     }
 }
 
+#navigation {
+    top: 0;
+}
+
 body.page-foreword {
     .section-wrapper.general-page.the-breadcrumbs{
         padding-top: $top_menu_height;
@@ -34,7 +38,7 @@ body.page-foreword {
 .section-wrapper.general-page {
 
     &.the-breadcrumbs{
-        margin-bottom: $size_margin * 4;
+        margin-bottom: $size_margin * 2;
         &.no-cover-image {
             padding-top: $top_menu_height;
             margin-bottom: 0;
@@ -148,6 +152,20 @@ body.page-foreword {
         }
     }
 
+    &.bilateral {
+        .article-heading  {
+            max-width: 480px;
+            padding: $size_margin * 0.75 0 ;
+            margin: 0 auto $size_margin;
+            border-top: 1px solid $color_light_blue;
+            border-bottom: 1px solid $color_light_blue;
+            h1 {
+                font-size: $main_title_size * 1.2;
+                text-transform: uppercase;
+            }
+        }
+    }
+
     &.contact-content {
 
         width: 800px;
@@ -240,8 +258,13 @@ body.page-foreword {
 }
 
 .post-cover-image {
+    margin-top: 50px;
     margin-bottom: $size_margin * 2;
     position: relative;
+
+    figure {
+        margin-bottom: 0;
+    }
 
     .caption-holder {
 
@@ -267,6 +290,80 @@ body.page-foreword {
             text-align: center;
             font-size: $content_size;
             color: white;
+        }
+    }
+
+    &.bilateral {
+        margin-bottom: 0;
+        .caption-holder {
+            top: 0;
+            padding: 0;
+            background: none!important;
+            background-color: transparent!important;
+
+            .caption {
+                width: 640px;
+                padding: $size_margin * 4 0 $size_margin * 3;
+                margin-left: auto;
+                text-align: left;
+
+                .flags {
+                    span {
+                        display: inline-block;
+                        width: 48px;
+                        margin-right: $size_margin / 2;
+                    }
+                    margin-bottom: $size_margin;
+                }
+
+                h3 {
+                    margin: 0;
+                    color: $color_main_blue;
+                    font-weight: bold;
+                    font-size: 2rem;
+                    line-height: 100%;
+                }
+
+                p {
+                    color: $color_main_blue;
+                    font-weight: bold;
+                    line-height: 135%;
+                }
+            }
+        }
+    }
+}
+
+.asean-nation-flags {
+    position: relative;
+    border-bottom: 6px solid $color_light_blue;
+    margin-bottom: $size_margin * 2;
+    .holder {
+        position: absolute;
+        width: 720px;
+        display: flex;
+        background-color: $color_light_blue;
+        padding: 10px 20px 30px;
+        border-radius: 16px;
+        bottom: -20px;
+        left: calc((100% - 720px) / 2);
+        justify-content: space-around;
+        .flag {
+            width: 38px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            &.active {
+                position: relative;
+                width: 90px;
+                img {
+                    position: absolute;
+                    max-width: none;
+                    bottom: 0;
+                }
+            }
         }
     }
 }
@@ -303,6 +400,29 @@ body.page-foreword {
             }
         }
     }
+
+    .bilateral.post-cover-image .caption-holder .caption{
+        text-align: center;
+        padding: 48px 0 0;
+        .flags span {
+            width: 32px;
+            margin: 0 4px;
+        }
+        h3 {
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin: 0.5rem 0;
+            font-size: 0.7rem;
+        }
+    }
+
+    .bilateral.asean-nation-flags .holder {
+        width: 640px;
+        padding: 10px;
+        left: calc((100% - 640px) / 2);
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -315,5 +435,27 @@ body.page-foreword {
         .contact-detail {
             width: 80%;
         }
+    }
+
+    .bilateral.post-cover-image .caption-holder .caption{
+        text-align: center;
+        padding: 24px 0 0;
+
+        .flags {
+            margin-bottom: 0.5rem;
+        }
+        h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin: 0.3rem 0;
+            font-size: 0.6rem;
+        }
+    }
+
+    .bilateral.asean-nation-flags .holder {
+        display: none;
     }
 }
