@@ -631,9 +631,9 @@ body.admin-bar #navigation {
   /* Old browsers */
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, #a5c9e5 1%, #a5c9e5 1%, #536dbc 52%, #536dbc 99%);
+  background: linear-gradient(to right, #a5c9e5 1%, #a5c9e5 1%, #233C87 52%, #233C87 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#a5c9e5", endColorstr="#536dbc",GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#a5c9e5", endColorstr="$color_main_blue",GradientType=1 );
   /* IE6-9 */
 }
 .button-holder a.button:before {
