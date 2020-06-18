@@ -338,6 +338,183 @@ body.admin-bar #navigation {
   border-right: 1px solid #1D7FC3;
   height: 18px;
 }
+.section-wrapper.general-page.success-stories {
+  width: calc(1024px - (20px * 8));
+  padding: 20px 80px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #666;
+}
+.section-wrapper.general-page.success-stories:last-of-type {
+  border-bottom: none;
+}
+.section-wrapper.general-page.success-stories .heading {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.section-wrapper.general-page.success-stories .heading h2 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 120%;
+}
+.section-wrapper.general-page.success-stories .heading h3 {
+  font-size: 0.9rem;
+  color: #1D7FC3;
+  font-weight: bold;
+  margin: 0;
+  line-height: 120%;
+}
+.section-wrapper.general-page.success-stories .heading .labels {
+  position: absolute;
+  top: -48px;
+  left: -24px;
+}
+.section-wrapper.general-page.success-stories .heading .labels span {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  width: 100px;
+  padding: 6px 20px 6px 40px;
+  color: #e5e5e5 !important;
+  text-transform: uppercase;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#536dbc+0,536dbc+52,a5c9e5+100 */
+  background: #536dbc;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #5DA9DD 0%, #5DA9DD 52%, #a5c9e5 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#5DA9DD", endColorstr="#a5c9e5",GradientType=1 );
+  /* IE6-9 */
+}
+.section-wrapper.general-page.success-stories .heading .labels span:before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 0px;
+  top: 100%;
+  border-width: 5px 10px;
+  border-style: solid;
+  border-color: #233C87 #233C87 transparent transparent;
+}
+.section-wrapper.general-page.success-stories .heading .labels span:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -10px;
+  bottom: 0;
+  border-width: 9px 5px;
+  border-style: solid;
+  border-color: #A5C9E5 transparent transparent #A5C9E5;
+}
+.section-wrapper.general-page.success-stories .heading .labels span b {
+  position: absolute;
+  width: 0;
+  height: 0;
+  right: -10px;
+  top: 0;
+  border-width: 9px 5px;
+  border-style: solid;
+  border-color: transparent transparent #A5C9E5 #A5C9E5;
+}
+.section-wrapper.general-page.success-stories .heading figure {
+  position: absolute;
+  top: -8px;
+  right: 0;
+  margin: 0;
+  width: 64px;
+}
+.section-wrapper.general-page.success-stories .content-holder {
+  display: flex;
+  justify-content: space-between;
+}
+.section-wrapper.general-page.success-stories .content-holder > * {
+  width: calc(50% - (20px / 2));
+}
+.section-wrapper.general-page.success-stories .content-holder .the-content {
+  color: #605E5E;
+}
+.section-wrapper.general-page.success-stories .content-holder .the-content strong {
+  color: #233C87;
+}
+.section-wrapper.general-page.success-stories .content-holder .the-content p {
+  text-align: justify;
+  font-size: 12px;
+}
+.section-wrapper.general-page.success-stories .content-holder .the-content hr {
+  display: block;
+  clear: both;
+  float: none;
+}
+.section-wrapper.general-page.success-stories .content-holder .the-content h1, .section-wrapper.general-page.success-stories .content-holder .the-content h2, .section-wrapper.general-page.success-stories .content-holder .the-content h3, .section-wrapper.general-page.success-stories .content-holder .the-content h4, .section-wrapper.general-page.success-stories .content-holder .the-content h5, .section-wrapper.general-page.success-stories .content-holder .the-content h6 {
+  color: #233C87;
+  font-weight: bold;
+}
+.section-wrapper.general-page.success-stories .content-holder .post-tags img {
+  display: inline-block;
+  margin-right: 4px;
+}
+.section-wrapper.general-page.success-stories .content-holder .featured-image {
+  position: relative;
+  margin-bottom: 20px;
+}
+.section-wrapper.general-page.success-stories .content-holder .featured-image figure {
+  margin: 0;
+}
+.section-wrapper.general-page.success-stories .content-holder .featured-image figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: white;
+}
+.section-wrapper.general-page.success-stories .content-holder .quote-holder {
+  position: relative;
+  padding-left: 40px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 150%;
+  color: #1D7FC3;
+}
+.section-wrapper.general-page.success-stories .content-holder .quote-holder:before {
+  content: " ";
+  background-image: url("../images/quote.png");
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 28px;
+  height: 28px;
+}
+.section-wrapper.general-page.success-stories .content-holder .quote-holder .quote-content {
+  position: relative;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+.section-wrapper.general-page.success-stories .content-holder .quote-holder .quote-content:after {
+  position: absolute;
+  content: " ";
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #666;
+  width: 32px;
+}
+.section-wrapper.general-page.success-stories .content-holder .quote-holder h4 {
+  font-size: 12px;
+  margin: 0 0 6.6666666667px 0;
+  color: #1D7FC3;
+  font-weight: bold;
+}
+.section-wrapper.general-page.success-stories .content-holder .quote-holder h5 {
+  margin: 0;
+  font-size: 12px;
+  color: #1D7FC3;
+  font-style: italic;
+}
 
 .post-cover-image {
   margin-top: 50px;
@@ -436,6 +613,52 @@ body.admin-bar #navigation {
   bottom: 0;
 }
 
+.button-holder {
+  max-width: 880px;
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button-holder a.button {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 6px 20px 6px 12px;
+  color: #e5e5e5 !important;
+  text-transform: uppercase;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#536dbc+0,536dbc+52,a5c9e5+100 */
+  background: #a5c9e5;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #a5c9e5 1%, #a5c9e5 1%, #536dbc 52%, #536dbc 99%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#a5c9e5", endColorstr="#536dbc",GradientType=1 );
+  /* IE6-9 */
+}
+.button-holder a.button:before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -10px;
+  bottom: 0;
+  border-width: 9px 5px;
+  border-style: solid;
+  border-color: #A5C9E5 #A5C9E5 transparent transparent;
+}
+.button-holder a.button:after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -10px;
+  top: 0;
+  border-width: 9px 5px;
+  border-style: solid;
+  border-color: transparent #A5C9E5 #A5C9E5 transparent;
+}
+
 .foreword-separator {
   position: relative;
   height: 130px;
@@ -465,6 +688,11 @@ body.admin-bar #navigation {
   }
   .section-wrapper .foreword-author .uk-first-column {
     margin-top: 20px;
+  }
+  .section-wrapper.general-page.success-stories {
+    width: calc(96% - (20px * 6));
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .bilateral.post-cover-image .caption-holder .caption {
@@ -499,6 +727,21 @@ body.admin-bar #navigation {
   }
   .section-wrapper.general-page.contact-content .contact-list .contact-detail {
     width: 80%;
+  }
+  .section-wrapper.general-page.success-stories {
+    width: calc(96% - (20px * 2));
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section-wrapper.general-page.success-stories .heading {
+    padding-right: 72px;
+  }
+  .section-wrapper.general-page.success-stories .content-holder {
+    flex-wrap: wrap;
+  }
+  .section-wrapper.general-page.success-stories .content-holder > * {
+    width: 100%;
+    margin-bottom: 20px;
   }
 
   .bilateral.post-cover-image .caption-holder .caption {

@@ -24,6 +24,45 @@
     }
 }
 
+@mixin left-button {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 6px 20px 6px 12px;
+    color: #e5e5e5 !important;
+    text-transform: uppercase;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#536dbc+0,536dbc+52,a5c9e5+100 */
+    background: #a5c9e5; /* Old browsers */
+    background: -moz-linear-gradient(left,  #a5c9e5 1%, #a5c9e5 1%, #536dbc 52%, #536dbc 99%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  #a5c9e5 1%,#a5c9e5 1%,#536dbc 52%,#536dbc 99%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  #a5c9e5 1%,#a5c9e5 1%,#536dbc 52%,#536dbc 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a5c9e5', endColorstr='#536dbc',GradientType=1 ); /* IE6-9 */
+
+    &:before {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: -10px;
+        bottom: 0;
+        border-width: 9px 5px;
+        border-style: solid;
+        border-color:  #A5C9E5 #A5C9E5 transparent transparent;
+    }
+    &:after {
+       content: ' ';
+       position: absolute;
+       width: 0;
+       height: 0;
+       left: -10px;
+       top: 0;
+       border-width: 9px 5px;
+       border-style: solid;
+       border-color: transparent #A5C9E5 #A5C9E5 transparent;
+
+    }
+}
+
 #navigation {
     top: 0;
 }
@@ -259,6 +298,187 @@ body.admin-bar #navigation {
             }
         }
     }
+
+    &.success-stories {
+
+        width: calc(1024px - (#{$size_margin} * 8));
+        padding: $size_margin $size_margin * 4;
+        margin-bottom: $size_margin;
+        border-bottom: 1px solid #666;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        .heading {
+            position: relative;
+            margin-top: $size_margin * 2;
+            margin-bottom: $size_margin;
+
+            h2 {
+                font-size: 1.6rem;
+                text-transform: uppercase;
+                margin: 0;
+                line-height: 120%;
+            }
+            h3 {
+                font-size: 0.9rem;
+                color: $color_sub_blue;
+                font-weight: bold;
+                margin: 0;
+                line-height: 120%;
+            }
+
+            .labels {
+                position: absolute;
+                top: -48px;
+                left: -24px;
+                span {
+                    position: relative;
+                    display: inline-block;
+                    font-weight: bold;
+                    width: 100px;
+                    padding: 6px 20px 6px 40px;
+                    color: #e5e5e5 !important;
+                    text-transform: uppercase;
+                    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#536dbc+0,536dbc+52,a5c9e5+100 */
+                    background: #536dbc; /* Old browsers */
+                    background: -moz-linear-gradient(left,  #5DA9DD 0%, #5DA9DD 52%, #a5c9e5 100%); /* FF3.6-15 */
+                    background: -webkit-linear-gradient(left,  #5DA9DD 0%,#5DA9DD 52%,#a5c9e5 100%); /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to right,  #5DA9DD 0%,#5DA9DD 52%,#a5c9e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5DA9DD', endColorstr='#a5c9e5',GradientType=1 ); /* IE6-9 */
+                    &:before {
+                        content: ' ';
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        left: 0px;
+                        top: 100%;
+                        border-width: 5px 10px;
+                        border-style: solid;
+                        border-color: $color_main_blue $color_main_blue transparent transparent;
+                    }
+                    &:after {
+                        content: ' ';
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        right: -10px;
+                        bottom: 0;
+                        border-width: 9px 5px;
+                        border-style: solid;
+                        border-color:#A5C9E5  transparent transparent #A5C9E5 ;
+                    }
+                    b {
+                        position: absolute;
+                       width: 0;
+                       height: 0;
+                       right: -10px;
+                       top: 0;
+                       border-width: 9px 5px;
+                       border-style: solid;
+                       border-color:  transparent transparent #A5C9E5 #A5C9E5  ;
+                    }
+                }
+            }
+
+            figure {
+                position: absolute;
+                top: -8px;
+                right: 0;
+                margin: 0;
+                width: 64px;
+            }
+        }
+
+        .content-holder {
+
+            display: flex;
+            justify-content: space-between;
+
+            > * {
+                width: calc(50% - (#{$size_margin} / 2));
+            }
+
+            .the-content {
+                @include content-style;
+            }
+
+            .post-tags {
+                img {
+                    display: inline-block;
+                    margin-right: 4px;
+                }
+            }
+
+            .featured-image {
+                position: relative;
+                margin-bottom: $size_margin;
+
+                figure {
+                    margin: 0;
+                }
+
+                figcaption {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    text-align: center;
+                    font-size: $content_size;
+                    color:white;
+                }
+            }
+
+            .quote-holder {
+                position: relative;
+                padding-left: $size_margin * 2;
+                font-size: $content_size;
+                font-weight: bold;
+                line-height: 150%;
+                color: $color_sub_blue;
+
+                &:before {
+                    content: " ";
+                    background-image: url('../images/quote.png');
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 28px;
+                    height: 28px;
+                }
+
+                .quote-content {
+                    position: relative;
+                    padding-bottom: $size_margin / 4;
+                    margin-bottom: $size_margin;
+                    &:after {
+                        position: absolute;
+                        content: " ";
+                        bottom: 0;
+                        left: 0;
+                        border-bottom: 1px solid #666;
+                        width: 32px;
+                    }
+                }
+
+                h4 {
+                    font-size: $content_size;
+                    margin: 0 0 $size_margin/3 0;
+                    color: $color_sub_blue;
+                    font-weight: bold;
+
+                }
+
+                h5 {
+                    margin: 0;
+                    font-size: $content_size;
+                    color: $color_sub_blue;
+                    font-style: italic;
+                }
+            }
+        }
+    }
 }
 
 .post-cover-image {
@@ -372,6 +592,17 @@ body.admin-bar #navigation {
     }
 }
 
+.button-holder {
+    max-width: 880px;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+
+    a.button {
+        @include left-button;
+    }
+}
+
 .foreword-separator {
     position: relative;
     height: 130px;
@@ -402,6 +633,12 @@ body.admin-bar #navigation {
             .uk-first-column {
                 margin-top: $size_margin;
             }
+        }
+
+        &.general-page.success-stories {
+            width: calc(96% - (#{$size_margin} * 6));
+            padding-left: $size_margin * 3;
+            padding-right: $size_margin * 3;
         }
     }
 
@@ -434,10 +671,27 @@ body.admin-bar #navigation {
         padding: 0;
     }
 
-    .section-wrapper.general-page.contact-content .contact-list {
-        justify-content: space-around;
-        .contact-detail {
-            width: 80%;
+    .section-wrapper.general-page {
+        &.contact-content .contact-list {
+            justify-content: space-around;
+            .contact-detail {
+                width: 80%;
+            }
+        }
+        &.success-stories {
+            width: calc(96% - (#{$size_margin} * 2));
+            padding-left: $size_margin;
+            padding-right: $size_margin;
+            .heading {
+                padding-right: 72px;
+            }
+            .content-holder {
+                flex-wrap: wrap;
+                > * {
+                    width: 100%;
+                    margin-bottom: $size_margin;
+                }
+            }
         }
     }
 
