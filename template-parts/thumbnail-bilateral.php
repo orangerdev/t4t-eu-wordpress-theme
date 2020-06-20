@@ -38,9 +38,12 @@ if(has_post_thumbnail()) :
     <?php
     foreach($flags as $flag => $title) :
         $state = ($nation === $flag) ? 'active' : '';
+        $link  = carbon_get_the_post_meta( $flag . '_link');
     ?>
         <div class="flag <?php echo $state; ?>">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon_book_flag_<?php echo $flag; ?>.png" alt="">
+            <a href='<?php echo $link; ?>'>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/icon_book_flag_<?php echo $flag; ?>.png" alt="" >
+            </a>
         </div>
     <?php endforeach; ?>
     </div>
